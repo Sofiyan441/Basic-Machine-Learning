@@ -1,0 +1,11 @@
+import matplotlib.pyplot as plt
+plt.axis([0,5,0,20])
+plt.plot([1,2,3,4],[1,4,9,16],'ro-')
+plt.text(1.1,12,'$y = x^2$',fontsize=20,bbox={'facecolor':'blue','alpha':0.2})
+plt.title('Plot Data Persamaan Kuadrat',fontsize=16,fontname='Times New Roman')
+plt.xlabel('x',fontsize=16,fontname='Times New Roman',color='green')
+plt.ylabel('y',fontsize=16,fontname='Times New Roman',color='green')
+plt.grid(True)
+plt.legend(['First series'])
+plt.savefig('grafik.png')
+plt.show()
